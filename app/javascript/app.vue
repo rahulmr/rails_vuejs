@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <div class="container">
+      <h1>{{ message }}</h1>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odio quae maxime ad perspiciatis, sed tempore in iure, libero veritatis natus dolores quasi pariatur perferendis quis repellat aut quod error.</p>
+    </div>
   </div>
 </template>
 
@@ -8,7 +13,7 @@
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
+      message: `Hi, you are in ${new Date().getFullYear()}`
     }
   }
 }
