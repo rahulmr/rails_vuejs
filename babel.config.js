@@ -66,17 +66,19 @@ module.exports = function(api) {
         }
       ],
       [
-        '@babel/plugin-transform-runtime',
-        {
-          helpers: false
-        }
-      ],
-      [
         '@babel/plugin-transform-regenerator',
         {
           async: false
         }
-      ]
+      ],
+      [
+        '@babel/plugin-transform-runtime',
+        {
+          helpers: false,
+          regenerator: true,
+          corejs: false
+        }
+      ],
     ].filter(Boolean)
   }
 }

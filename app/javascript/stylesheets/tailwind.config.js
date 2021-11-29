@@ -1,12 +1,22 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
-    'app/view/**/*.html.erb',
-    'app/javascript/**/*.js',
-    'app/javascript/**/*.vue',
-  ],
+  mode: 'jit',
+  purge: {
+    enabled: ["production", "staging"].includes(process.env.NODE_ENV),
+    content: [
+      './app/views/**/*.html.erb',
+      './app/helpers/**/*.rb',
+      './app/javascript/**/*.js',
+    ],
+  },
   presets: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
