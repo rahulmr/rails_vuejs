@@ -1,5 +1,27 @@
 <template>
-  <div>
+  <div class="p-24">
+
+    <figure class="md:flex bg-gray-100 rounded-2xl p-8 md:p-0">
+      <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="../assets/images/amochi.jpg" alt="" width="384" height="512">
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <blockquote>
+          <p class="text-lg font-semibold text-left">
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi, quos nulla dolore repudiandae voluptates voluptatum?
+            Porro sunt, unde recusandae beatae odio repellendus qui atque doloremque laborum.
+            Voluptates culpa voluptatibus enim.”
+          </p>
+        </blockquote>
+        <figcaption class="font-medium">
+          <div class="text-cyan-600">
+            Amoralchik
+          </div>
+          <div class="text-gray-500">
+            Software Developer, Ukraine
+          </div>
+        </figcaption>
+      </div>
+    </figure>
 
     <div class="m-5 mt-10 p-2 grid border-4 border-black rounded-xl bg-blue-500 text-white" id="app">
       <div class='mb-5'>
