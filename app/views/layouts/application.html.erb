@@ -15,7 +15,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="containe font-mono">
-    <%= yield %>
-  </body>
+    <body class="font-mono">
+        <div>
+            <header>
+                <%= javascript_pack_tag 'header' %>
+            </header>
+            <main>
+                <%= yield %>
+            </main>
+        </div>
+    </body>
 </html>
